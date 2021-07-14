@@ -304,3 +304,12 @@ body {
     text-decoration: underline;
     color: #6E5AEA;
 }
+
+
+
+.category-item {
+    display:inline-block;
+    padding: 8px;
+    border:#6E5AEA 1px solid;
+    margin-bottom: 8px;
+}
