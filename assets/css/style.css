@@ -295,9 +295,15 @@ body {
     padding-inline-start: 0px;
 }
 
+#page-toc li {
+    margin-bottom: 12px;
+}
+
 #page-toc li a {
     text-decoration: none;
     color: #111111;
+    padding: 24px;
+    margin-bottom: 12px;
 }
 
 #page-toc li a:hover {
@@ -305,11 +311,55 @@ body {
     color: #6E5AEA;
 }
 
+#tutorial-list {
+    list-style: none;
+}
 
+#tutorial-list li a {
+    text-decoration: none;
+    color: #111111;
+}
 
 .category-item {
     display:inline-block;
     padding: 8px;
     border:#6E5AEA 1px solid;
     margin-bottom: 8px;
+}
+
+
+
+#page-toc {
+    list-style: none;
+    padding-inline-start: 8px;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 24px;
+}
+
+#page-toc li{
+    padding: 12px;
+    margin-right: 24px;
+    border-radius: 8px;
+}
+
+#page-toc li a {
+    text-decoration: none;
+    color: #111111;
+}
+
+#page-toc li:hover{
+    background: #fafafa;
+}
+
+#page-toc li:hover a{
+    color: #6E5AEA;
+}
+
+#page-toc li.active{
+    background: #efefef;
+}
+
+#page-toc li.active a{
+    color: #6E5AEA;
 }
