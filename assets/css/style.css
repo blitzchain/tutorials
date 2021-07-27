@@ -252,9 +252,13 @@ body {
   font-size: 1rem;
   font-weight:400;
   line-height: 1.5;
-  color: #6E5AEA;
       border-radius: 0.25rem;
   cursor: pointer;
+}
+
+#sign-in a{
+    color: #6E5AEA;
+    text-decoration: none;
 }
 
 #sign-up {
@@ -262,13 +266,18 @@ body {
   cursor: pointer;
   border: 0px; 
   width: 134px;
-  color: #fff;
   font-weight:400;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
 }
+
+#sign-up a {
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+
 
 /******************************************************************/
 /*************************** Footer *******************************/
@@ -282,6 +291,12 @@ body {
 #footer-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menus {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -348,6 +363,18 @@ body {
 /******************************************************************/
 /*************************** Content *************************/
 /******************************************************************/
+
+#hero {
+    background: #6E5AEA;
+    padding: 60px 40px 60px 40px;
+}
+
+.content-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px 40px 20px 40px;
+    color: #ffffff;
+}
 
 .row {
     display: flex;

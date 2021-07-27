@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
-
+<section id='hero'>
+    <div class="content-wrapper">
+        <h1>Blitzchain Tutorials</h1>
+        <p>Blitzchain APIs make it simple to add realtime features to your applications, fast. We have hundreds of tutorials, written by our experts, to get you up and running!</p>
+        <p>Search to find your feature in our collection, or check out the subject list below for inspiration on what you can build using Pusher.</p>
+    </div>
+</section>
 <div class=row>
     <div id="sidebar" class=column>
         <h3>Products</h3>
@@ -35,7 +41,8 @@ layout: default
             <ul id="tutorial-list">
                 {% for post in site.posts %}
                 <li>
-                    <a href="{{ post.url }}">
+                    {% assign post_url = site.baseurl | append: post.url %}
+                    <a href="{{ post_url }}">
                         <h3>{{ post.title }}</h3>
                         {{ post.excerpt }}
                     </a>
